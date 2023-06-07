@@ -21,7 +21,8 @@ class ExerciseView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text("Puxada alta Pronada - Treino A")),
+        appBar: AppBar(
+            title: Text("${exerciseModel.nome} - ${exerciseModel.treino}")),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             print("Float foi clicado");
@@ -30,8 +31,7 @@ class ExerciseView extends StatelessWidget {
         ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          child: ListView(
             children: [
               ElevatedButton(
                 onPressed: () {},
@@ -41,15 +41,20 @@ class ExerciseView extends StatelessWidget {
                 "Como fazer ?",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
-              const Text(
-                  "Segura com as duas mãos na barra, mantem a coluna reta e puxa"),
-              Divider(),
+              Text(exerciseModel.comoFazer),
+              const Divider(),
               const Text(
                 "Como estou me sentindo ?",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
-              const Text("Senti bastante ativação hoje!"),
-              Divider(),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: List.generate(listFelling.length, (index) {
+                  FellingModel fellingCurrent = listFelling[index];
+                  return Text(fellingCurrent.sentindo);
+                }),
+              ),
+              const Divider(),
             ],
           ),
         ));
