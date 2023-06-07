@@ -1,7 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/models/exercises_models.dart';
+import 'package:flutter_application_1/models/felling_model.dart';
 
 class ExerciseView extends StatelessWidget {
-  const ExerciseView({super.key});
+  ExerciseView({super.key});
+
+  final ExerciseModel exerciseModel = ExerciseModel(
+      id: "EX001",
+      nome: "Remada Baixa",
+      treino: "treino A",
+      comoFazer: "Segura a barra");
+
+  final List<FellingModel> listFelling = [
+    FellingModel(
+        id: "SE001", sentindo: "Pouca ativação hoje", data: "2023-06-07"),
+    FellingModel(
+        id: "SE001", sentindo: "Ja senti uma ativação", data: "2023-07-10"),
+  ];
 
   @override
   Widget build(BuildContext context) {
