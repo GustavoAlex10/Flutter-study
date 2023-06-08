@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
+- [class-4](https://www.youtube.com/watch?v=EKS954a3cYM&list=PLgQHOfYMaGIX0qH2G_BDkO5HWeDJoZIfu&index=11&ab_channel=Dotcode) - styling the view, creating "take photo" and "delete" sentiment buttons
+
 - [class-3](https://www.youtube.com/watch?v=Fa-MzGpWwt4&list=PLgQHOfYMaGIX0qH2G_BDkO5HWeDJoZIfu&index=10&ab_channel=Dotcode) - Added Values in View
 
 - [class-2](https://www.youtube.com/watch?v=QhTeUX_f0QU&list=PLgQHOfYMaGIX0qH2G_BDkO5HWeDJoZIfu&index=9&ab_channel=Dotcode) - Added Models 

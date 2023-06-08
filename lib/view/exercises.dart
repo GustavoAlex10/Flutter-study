@@ -21,6 +21,7 @@ class ExerciseView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.blue,
         appBar: AppBar(
             title: Text("${exerciseModel.nome} - ${exerciseModel.treino}")),
         floatingActionButton: FloatingActionButton(
@@ -29,32 +30,76 @@ class ExerciseView extends StatelessWidget {
           },
           child: const Icon(Icons.add),
         ),
-        body: Padding(
+        body: Container(
+          margin: const EdgeInsets.all(8),
           padding: const EdgeInsets.all(16.0),
+          decoration: BoxDecoration(
+              color: Colors.white, borderRadius: BorderRadius.circular(16)),
           child: ListView(
             children: [
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text("Enviar Foto"),
+              SizedBox(
+                height: 250,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text("Enviar Foto"),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text("Tirar Foto"),
+                    ),
+                  ],
+                ),
               ),
+              const SizedBox(height: 8),
               const Text(
                 "Como fazer ?",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
+              const SizedBox(height: 8),
               Text(exerciseModel.comoFazer),
-              const Divider(),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Divider(
+                  color: Colors.black,
+                ),
+              ),
+              const SizedBox(height: 8),
               const Text(
                 "Como estou me sentindo ?",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
+              const SizedBox(height: 8),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: List.generate(listFelling.length, (index) {
                   FellingModel fellingCurrent = listFelling[index];
-                  return Text(fellingCurrent.sentindo);
+                  return ListTile(
+                    dense: true,
+                    contentPadding: EdgeInsets.zero,
+                    title: Text(fellingCurrent.sentindo),
+                    subtitle: Text(fellingCurrent.data),
+                    leading: const Icon(Icons.double_arrow_rounded),
+                    trailing: IconButton(
+                      icon: const Icon(
+                        Icons.delete,
+                        color: Colors.red,
+                      ),
+                      onPressed: () {
+                        print("Deletar ${fellingCurrent.sentindo}");
+                      },
+                    ),
+                  );
                 }),
               ),
-              const Divider(),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Divider(
+                  color: Colors.black,
+                ),
+              ),
             ],
           ),
         ));
