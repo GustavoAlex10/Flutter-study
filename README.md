@@ -21,9 +21,13 @@ https://github.com/GustavoAlex10/Flutter-study.git
 
 Here are some screenshots of the project in action:
 
-![Screenshot 1](assets/readme/screenshots/screenshot.png)
+Screenshot 1:
 
-![Screenshot 2](assets/readme/screenshots/screenshot2.png)
+<img src="assets/readme/screenshots/screenshot.png" alt="Screenshot 1" width="400" height="600">
+
+Screenshot 2: 
+
+<img src="assets/readme/screenshots/screenshot2.png" alt="Screenshot 2" width="400" height="600">
 
 ## Contribution
 
