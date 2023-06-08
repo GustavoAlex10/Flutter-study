@@ -23,7 +23,29 @@ class ExerciseView extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.blue,
         appBar: AppBar(
-            title: Text("${exerciseModel.nome} - ${exerciseModel.treino}")),
+          title: Column(
+            children: [
+              Text(
+                exerciseModel.nome,
+                style:
+                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+              ),
+              Text(
+                exerciseModel.treino,
+                style:
+                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              ),
+            ],
+          ),
+          centerTitle: true,
+          backgroundColor: const Color(0xFF0A6D92),
+          elevation: 0,
+          toolbarHeight: 72,
+          shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(32),
+          )),
+        ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             print("Float foi clicado");
