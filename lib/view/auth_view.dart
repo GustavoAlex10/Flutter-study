@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/_commons/colors.dart';
 
 class AuthenticationView extends StatelessWidget {
   const AuthenticationView({super.key});
@@ -7,20 +8,36 @@ class AuthenticationView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      body: Stack(
         children: [
-          Image.asset(
-            "assets/gym.png",
-            height: 128,
+          Container(
+            decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                  MyColors.blueTopGradient,
+                  MyColors.bluebottomGradient
+                ])),
           ),
-          const Text(
-            "GymApp",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                fontSize: 48, fontWeight: FontWeight.bold, color: Colors.white),
-          )
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Image.asset(
+                "assets/gym.png",
+                height: 128,
+              ),
+              const Text(
+                "GymApp",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontSize: 48,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              )
+            ],
+          ),
         ],
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/_commons/colors.dart';
 import 'package:flutter_application_1/models/exercises_models.dart';
 import 'package:flutter_application_1/models/felling_model.dart';
 
@@ -38,7 +39,7 @@ class ExerciseView extends StatelessWidget {
             ],
           ),
           centerTitle: true,
-          backgroundColor: const Color(0xFF0A6D92),
+          backgroundColor: MyColors.blueDark,
           elevation: 0,
           toolbarHeight: 72,
           shape: const RoundedRectangleBorder(
