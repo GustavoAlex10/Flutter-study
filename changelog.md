@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
+- [class-6](https://www.youtube.com/watch?v=dkaDWFWZU-Q&list=PLgQHOfYMaGIX0qH2G_BDkO5HWeDJoZIfu&index=13&ab_channel=Dotcode) - Study IMAGE widget
 
 - [class-5](https://www.youtube.com/watch?v=JzrTgxNN4Tg&list=PLgQHOfYMaGIX0qH2G_BDkO5HWeDJoZIfu&index=12&ab_channel=Dotcode) - Styling Appbar
 
