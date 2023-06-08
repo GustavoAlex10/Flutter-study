@@ -1,16 +1,40 @@
-# flutter_application_1
+# My Dart Project
 
-A new Flutter project.
+Welcome to my Dart project! This project is intended for...
 
-## Getting Started
+## How to Run the Project
 
-This project is a starting point for a Flutter application.
+Follow these steps to run the project on your local machine:
 
-A few resources to get you started if this is your first Flutter project:
+1. Clone this repository:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+https://github.com/GustavoAlex10/Flutter-study.git
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+2. Navigate to the project directory:
+
+
+3. Run the project:
+
+
+## Screenshots
+
+Here are some screenshots of the project in action:
+
+![Screenshot 1](assets/readme/screenshots/screenshot.png)
+
+![Screenshot 2](assets/readme/screenshots/screenshot2.png)
+
+## Contribution
+
+If you would like to contribute to this project, follow the steps below:
+
+1. Fork this repository.
+2. Create a branch for your new feature: `git checkout -b my-new-feature`
+3. Make desired changes and add commits: `git commit -m 'Add my new feature'`
+4. Push the changes to your fork: `git push origin my-new-feature`
+5. Open a pull request in this repository, describing your changes.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
