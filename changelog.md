@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.1.0] - 2023-06-08 
+
 ### Added
 
 - [class-7](https://www.youtube.com/watch?v=Tb6-57m7AMA&list=PLgQHOfYMaGIX0qH2G_BDkO5HWeDJoZIfu&index=14&ab_channel=Dotcode) - Study background gradient
